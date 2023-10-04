@@ -42,7 +42,9 @@
     list-style: none;
 }
 
-.topListItem{
+.topListItem a {
+    text-decoration: none; /* Remove the underline*/
+    color: #333;
     margin-right: 20px;
     font-size: 18px;
     font-weight: 300;
@@ -51,7 +53,7 @@
 
 .topSearchIcon{
     font-size: 18px;
-    color: #666;
+    color: #667;
     cursor: pointer;
     margin-left: 15px;
 }
