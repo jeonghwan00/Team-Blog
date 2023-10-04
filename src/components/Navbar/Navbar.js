@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 export default function Navbar()  {
@@ -13,14 +13,25 @@ export default function Navbar()  {
         </div>
         <div className="topCenter">
             <ul className="topList">
-                <li className="topListItem Home">HOME</li>
-                <li className="topListItem Profile">PROFILE</li>
-                <li className="topListItem Writing">WRITING</li>
-                <li className="topListItem Portfolio">PORTFOLIO</li>
+                <li className="topListItem">
+                    <Link to="/">HOME</Link>
+                </li>
+                <li className="topListItem">
+                    <Link to="/about">ABOUT</Link>
+                </li>
+                <li className="topListItem">
+                    <Link to="/profile">PROFILE</Link>
+                </li>
+                <li className="topListItem">
+                    <Link to="/writing">WRITING</Link>
+                </li>
+                <li className="topListItem">
+                    <Link to="/portfolio">PORTFOLIO</Link>
+                </li>
+
             </ul>
         </div>
         <div className="topRight">
-            <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
         </div>
         </>
     )
